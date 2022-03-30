@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyRegressionSuite" parallel="tests" thread-count="5">
+  <test name="TC01" >
+<classes>
+<class name="Class1"> <methods>
+<include name="Test1"></include>
+</methods>
+</class>
+</classes>
+  </test> 
+<test name="TC02" >
+
+<classes>
+
+<class name="Class2"> <methods>
+<include name="Test2"></include></methods>
+</class>
+</classes>
+  </test> 
+<!-- Test -->
+</suite> <!-- Suite -->
