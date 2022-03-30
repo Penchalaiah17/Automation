@@ -7,6 +7,7 @@ public class ActionClass {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\KoduvayurAghoraAravi\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.quit();
 	
 
 	}
