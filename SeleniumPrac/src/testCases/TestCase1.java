@@ -37,7 +37,7 @@ public class TestCase1 {
 		LandingPage.ClickSearchButton();
 		Thread.sleep(1000);
 		ProductsListPage.Product();
-		driver.quit();
+//		driver.quit();
 
 	}
 }
