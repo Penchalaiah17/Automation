@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-28T23:00:02 IST" name="Default suite" finished-at="2022-03-28T23:00:17 IST" duration-ms="14834">
+  <suite started-at="2022-03-31T20:19:38 IST" name="MyRegressionSuite" finished-at="2022-03-31T20:20:04 IST" duration-ms="26151">
     <groups>
     </groups>
-    <test started-at="2022-03-28T23:00:02 IST" name="Default test" finished-at="2022-03-28T23:00:17 IST" duration-ms="14834">
-      <class name="utils.GoldPeakBeverages">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:utils.GoldPeakBeverages@34f5090e]" started-at="2022-03-28T23:00:02 IST" name="beforeMethod" finished-at="2022-03-28T23:00:12 IST" duration-ms="10431" status="PASS">
+    <test started-at="2022-03-31T20:19:38 IST" name="TC01" finished-at="2022-03-31T20:20:04 IST" duration-ms="26151">
+      <class name="testCases.TestCase1">
+        <test-method signature="Run()[pri:0, instance:testCases.TestCase1@272ed83b]" started-at="2022-03-31T20:19:38 IST" name="Run" finished-at="2022-03-31T20:20:04 IST" duration-ms="26085" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="SocialMediaClickable()[pri:0, instance:utils.GoldPeakBeverages@34f5090e]" started-at="2022-03-28T23:00:12 IST" name="SocialMediaClickable" finished-at="2022-03-28T23:00:16 IST" duration-ms="3643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SocialMediaClickable -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:utils.GoldPeakBeverages@34f5090e]" started-at="2022-03-28T23:00:16 IST" name="afterMethod" finished-at="2022-03-28T23:00:17 IST" duration-ms="702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- utils.GoldPeakBeverages -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Run -->
+      </class> <!-- testCases.TestCase1 -->
+    </test> <!-- TC01 -->
+  </suite> <!-- MyRegressionSuite -->
 </testng-results>
