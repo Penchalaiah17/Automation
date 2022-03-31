@@ -12,7 +12,7 @@ public class ProductsListPage {
 	}
 	@FindBy(xpath="//img[@class='_2r_T1I']")
 	WebElement Product;
-	public void Product() {
+	public void ProductClick() {
 		Product.click();
 	}
 }
