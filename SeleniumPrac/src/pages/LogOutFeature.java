@@ -1,5 +1,7 @@
 package pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -12,15 +14,18 @@ public class LogOutFeature {
 	}
 	@FindBy(xpath="//div[@class='exehdJ']")
 	WebElement AccountName;
-	@FindBy(xpath="//div[@class='_3vhnxf']")
+//	@FindBy(xpath="//div[text()='Logout')]")
+	@FindBy(xpath="//li[@class='_2NOVgJ']//a[@class='_2kxeIr']")
 	WebElement LogOutButton;
 	public void HoverOnAccount() throws InterruptedException {
+		Thread.sleep(1000);
 		Actions action = new Actions(driver);
 		action.moveToElement(AccountName).perform();
-		Thread.sleep(2000);
+		action.wait(1000);
+//		Thread.sleep(2000);
+//		action.moveToElement(LogOutButton).perform();
+//		action.click().perform();
 		LogOutButton.click();
 	}
-	
-	
 }
 //_3vhnxf
