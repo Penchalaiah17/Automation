@@ -26,16 +26,16 @@ public class TestCase1 {
 		LogInPage.EnterUserName("9182288966");
 		LogInPage.EnterPassword("9182288966");
 		LogInPage.ClickLogInButton();
-//		Thread.sleep(1000);
-//	
-//		LandingPage.GoToSearchBar("Casio Edifice");
-//		LandingPage.ClickSearchButton();
-//		Thread.sleep(1000);
-//	
-//		ProductsListPage.ProductClick();
-//		Thread.sleep(1000);
-//		ProductPage.BuyNowButton();
-//		Thread.sleep(1000);
+		Thread.sleep(1000);
+	
+		LandingPage.GoToSearchBar("Casio Edifice");
+		LandingPage.ClickSearchButton();
+		Thread.sleep(1000);
+	
+		ProductsListPage.ProductClick();
+		Thread.sleep(1000);
+		ProductPage.BuyNowButton();
+		Thread.sleep(1000);
 		LogOutFeature.HoverOnAccount();
 		
 //		driver.quit();
