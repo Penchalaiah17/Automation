@@ -36,7 +36,7 @@ public class TestCase1 {
 		Thread.sleep(1000);
 		ProductPage.BuyNowButton();
 		Thread.sleep(1000);
-		LogOutFeature.HoverOnAccount();
+		LogOutFeature.HoverOnAccountName();
 		
 //		driver.quit();
 
