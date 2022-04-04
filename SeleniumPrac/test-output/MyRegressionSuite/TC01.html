@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 03 11:35:47 IST 2022</td>
+<td>Started on:</td><td>Mon Apr 04 12:46:49 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25853 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14245 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,68 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.TestCase1.Run()'><b>Run</b><br>Test class: testCases.TestCase1</td>
-<td><div><pre>java.lang.IllegalMonitorStateException: current thread is not owner
-	at java.base/java.lang.Object.wait(Native Method)
-	at pages.LogOutFeature.HoverOnAccount(LogOutFeature.java:24)
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[text()=&apos;Logout&apos;)] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//a[text()=&apos;Logout&apos;)]&apos; is not a valid XPath expression.
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;SCI-LT-098&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e67b25210e97b5ae3f1f4e6de693481, findElement {using=xpath, value=//a[text()=&apos;Logout&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\KODUVA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61843/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e67b25210e97b5ae3f1f4e6de693481
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pages.LogOutFeature.HoverOnAccountName(LogOutFeature.java:23)
 	at testCases.TestCase1.Run(TestCase1.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1597415863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1597415863'><pre>java.lang.IllegalMonitorStateException: current thread is not owner
-	at java.base/java.lang.Object.wait(Native Method)
-	at pages.LogOutFeature.HoverOnAccount(LogOutFeature.java:24)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace491168136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace491168136'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[text()=&apos;Logout&apos;)] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//a[text()=&apos;Logout&apos;)]&apos; is not a valid XPath expression.
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;SCI-LT-098&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e67b25210e97b5ae3f1f4e6de693481, findElement {using=xpath, value=//a[text()=&apos;Logout&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\KODUVA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61843/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e67b25210e97b5ae3f1f4e6de693481
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pages.LogOutFeature.HoverOnAccountName(LogOutFeature.java:23)
 	at testCases.TestCase1.Run(TestCase1.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -114,7 +163,7 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>25</td>
+<td>14</td>
 <td>testCases.TestCase1@272ed83b</td></tr>
 </table><p>
 </body>

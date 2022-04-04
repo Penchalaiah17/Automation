@@ -11,18 +11,17 @@ public class LogOutFeature {
 	}
 	@FindBy(xpath="//div[@class='exehdJ']")
 	WebElement AccountName;
-//	@FindBy(xpath="//div[text()='Logout')]")
-	@FindBy(xpath="//li[@class='_2NOVgJ']//a[@class='_2kxeIr']")
+	@FindBy(xpath="//a[text()='Logout')]")
+	//	@FindBy(xpath="//li[@class='_2NOVgJ']//a[@class='_2kxeIr']")
 	WebElement LogOutButton;
 	public void HoverOnAccountName() throws InterruptedException {
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		action.moveToElement(AccountName).perform();
-		action.wait(1000);
-//		Thread.sleep(2000);
-//		action.moveToElement(LogOutButton).perform();
-//		action.click().perform();
+		action.moveToElement(AccountName).build().perform();
+		//		Thread.sleep(2000);
+		//		action.click(LogOutButton).build().perform();
 		LogOutButton.click();
 	}
 }
 //_3vhnxf
+
