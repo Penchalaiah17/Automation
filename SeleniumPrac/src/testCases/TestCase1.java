@@ -39,6 +39,5 @@ public class TestCase1 {
 		LogOutFeature.HoverOnAccountName();
 		
 //		driver.quit();
-
 	}
 }
