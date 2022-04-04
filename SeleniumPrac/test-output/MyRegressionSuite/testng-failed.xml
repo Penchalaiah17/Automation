@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [MyRegressionSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="TC01(failed)">
+<suite name="Failed suite [MyRegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AnchorClick(failed)">
     <classes>
-      <class name="testCases.TestCase1">
+      <class name="utils.GoldPeakBeverages">
         <methods>
-          <include name="Run"/>
+          <include name="afterMethod"/>
+          <include name="SignIn"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testCases.TestCase1 -->
+      </class> <!-- utils.GoldPeakBeverages -->
     </classes>
-  </test> <!-- TC01(failed) -->
+  </test> <!-- AnchorClick(failed) -->
 </suite> <!-- Failed suite [MyRegressionSuite] -->

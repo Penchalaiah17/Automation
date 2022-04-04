@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-04T13:13:25 IST" name="MyRegressionSuite" finished-at="2022-04-04T13:13:41 IST" duration-ms="16591">
+  <suite started-at="2022-04-04T13:36:42 IST" name="MyRegressionSuite" finished-at="2022-04-04T13:36:56 IST" duration-ms="14663">
     <groups>
     </groups>
-    <test started-at="2022-04-04T13:13:25 IST" name="TC01" finished-at="2022-04-04T13:13:41 IST" duration-ms="16591">
-      <class name="testCases.TestCase1">
-        <test-method signature="Run()[pri:0, instance:testCases.TestCase1@272ed83b]" started-at="2022-04-04T13:13:25 IST" name="Run" finished-at="2022-04-04T13:13:41 IST" duration-ms="16544" status="PASS">
+    <test started-at="2022-04-04T13:36:42 IST" name="AnchorClick" finished-at="2022-04-04T13:36:56 IST" duration-ms="14663">
+      <class name="utils.GoldPeakBeverages">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:utils.GoldPeakBeverages@31e5415e]" started-at="2022-04-04T13:36:42 IST" name="beforeMethod" finished-at="2022-04-04T13:36:54 IST" duration-ms="12301" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Run -->
-      </class> <!-- testCases.TestCase1 -->
-    </test> <!-- TC01 -->
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="SignIn()[pri:0, instance:utils.GoldPeakBeverages@31e5415e]" started-at="2022-04-04T13:36:54 IST" name="SignIn" finished-at="2022-04-04T13:36:56 IST" duration-ms="2309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:utils.GoldPeakBeverages@31e5415e]" started-at="2022-04-04T13:36:56 IST" name="afterMethod" finished-at="2022-04-04T13:36:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- utils.GoldPeakBeverages -->
+    </test> <!-- AnchorClick -->
   </suite> <!-- MyRegressionSuite -->
 </testng-results>
